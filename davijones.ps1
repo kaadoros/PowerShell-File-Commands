@@ -1,0 +1,15 @@
+$item = get-item 'C:\[insert filepath here]\*'
+$time=Measure-Command -Expression {Copy-Item -Path "C:\[insert filepath here]" -Destination "C:\[insert destination filepath here]" -Recurse}
+write-host "$time Sec"
+$result = New-Object -TypeName psobject -Property @{
+                    Source           = $item.fullname
+                    TimeTaken        = $time.TotalSeconds
+                    }
+
+$result|Export-Csv 'C:\[insert filepath here]\result.csv' -Force -Append -NoTypeInformation
+
+
+
+$f = new-object System.IO.FileStream C:\[insert filepath here], Create, ReadWrite
+$f.SetLength([insert file size here])
+$f.Close()
