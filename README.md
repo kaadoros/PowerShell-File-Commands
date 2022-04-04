@@ -1,5 +1,5 @@
 # PowerShell-File-Commands
-This repository houses Powershell commands I used for a Statistics project on tracking time of transferring files to a separate hard drive.
+This repository houses Powershell commands I used for a Statistics project for tracking time of transferring files to a separate hard drive.
 
 The first line grabs whatever is within the filepath (useful for grabbing multiple files within a folder).
 
