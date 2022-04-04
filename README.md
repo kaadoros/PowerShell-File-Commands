@@ -9,7 +9,7 @@ The third line spits out the result into an object where it has a source name (w
 for a single object and an object array for multiple objects) and the time it took for the copy to happen in seconds.
 
 The fourth line exports the result object created and puts it into a CSV file at the desired filepath.
---------------------------------------------------------------------------------------------------------------------------
+
 The next three lines are a separate command set for making a dummy file of desired size.
 
 The first line makes an object of desired filetype (depends on what file extension is added at the end of the path) at the desired location of "0 size".
